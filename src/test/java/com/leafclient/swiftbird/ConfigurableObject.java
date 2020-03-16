@@ -1,3 +1,5 @@
+package com.leafclient.swiftbird;
+
 import fr.shyrogan.swiftbird.annotation.Property;
 import fr.shyrogan.swiftbird.annotation.listener.Listener;
 import fr.shyrogan.swiftbird.annotation.number.Clamp;
@@ -21,9 +23,13 @@ public class ConfigurableObject {
         return future;
     }
 
+    public void printProperties() {
+        System.out.println(cheese + " " + value + " " + uh);
+    }
+
     public enum Result {
         PERFECT,
-        UH_OH;
+        UH_OH
     }
 
 }

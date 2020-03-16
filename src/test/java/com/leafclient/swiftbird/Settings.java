@@ -1,4 +1,5 @@
-import com.leafclient.swiftbird.Swiftbird;
+package com.leafclient.swiftbird;
+
 import org.junit.Test;
 
 public class Settings {
@@ -7,7 +8,7 @@ public class Settings {
     private static ConfigurableObject configurableObject = new ConfigurableObject();
 
     @Test
-    public void simpleLookUp() {
+    public void assertLookUp() {
         swiftbird.in(configurableObject)
                 .forEach(setting -> System.out.println(setting.getLabel() + " " + setting.getValue()));
     }

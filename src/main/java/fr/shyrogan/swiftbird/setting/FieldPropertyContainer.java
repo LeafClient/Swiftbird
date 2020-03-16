@@ -8,7 +8,9 @@ import java.lang.invoke.MethodHandle;
 public class FieldPropertyContainer<T> implements PropertyContainer<T> {
 
     private final String label, description;
-    private transient final MethodHandle valueGetter, valueSetter, listener;
+    private transient final MethodHandle valueGetter;
+    private transient final MethodHandle valueSetter;
+    private transient final MethodHandle listener;
 
     public FieldPropertyContainer(String label, String description, MethodHandle valueGetter, MethodHandle valueSetter, MethodHandle listener) {
         this.label = label;
@@ -52,8 +54,6 @@ public class FieldPropertyContainer<T> implements PropertyContainer<T> {
     /**
      * Modifies the value of the field using the {@link this#valueSetter}
      * @param value New value
-     *
-     * @return This setting for fluent syntax
      */
     @Override
     public void setValue(T value) {
