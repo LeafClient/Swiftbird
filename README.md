@@ -1,5 +1,7 @@
 # Swiftbird
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c1dab84ef24b49fa9337eaec4cea5aa3)](https://app.codacy.com/gh/LeafClient/Swiftbird?utm_source=github.com&utm_medium=referral&utm_content=LeafClient/Swiftbird&utm_campaign=Badge_Grade_Dashboard)
+
 Swiftbird is a library created for **Leaf** that allows the creation of what we call 
 "Property" _(a.k.a Setting)_.  
 The default implementation wrote by [Shyrogan](https://github.com/Shyrogan) is annotation-based
