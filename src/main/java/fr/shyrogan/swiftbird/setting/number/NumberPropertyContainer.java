@@ -30,7 +30,11 @@ public final class NumberPropertyContainer<T extends Number> extends FieldProper
      */
     @Override
     public void setValue(T value) {
-        super.setValue(range.coerce(round(value, step)));
+        if(step == null && range == null) {
+            super.setValue(value);
+        } else {
+            super.setValue(range.coerce(round(value, step)));
+        }
     }
 
     /**
